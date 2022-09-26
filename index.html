@@ -9,9 +9,55 @@
 <body>
 
     <!-- Question 1 - Create a Table as shown in the Table image. -->
+    <p>Table</p>
+    <table border="2" style="text-align: center;">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
 
-
+    <br><br>
     <!-- Question 2 - Create a Form as shown in the Form image. using POST Method  -->
-    
+    <form action="">
+        <label for="title">Salutation</label><br>
+        <select name="title" id="title">
+            <option value="none">--None--</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select>
+        <br>
+        <label for="fname">First name</label>
+        <input type="text">
+        <br>
+        <label for="lanme">Last name</label>
+        <input type="text"><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender">
+        <label for="male">Male</label>
+        <input type="radio" name="Gender">
+        <label for="male">Female</label><br>
+        <label for="Email">Email</label>
+        <input type="email"><br>
+        <label for="DOB">Date of Birth</label>
+        <input type="date"><br>
+        <label for="Address">Address</label><br>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea><br>
+        <input type="submit">
+    </form>
 </body>
 </html>
